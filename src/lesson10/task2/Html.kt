@@ -1,9 +1,9 @@
-@file:Suppress("UNUSED_PARAMETER")
+/*@file:Suppress("UNUSED_PARAMETER")
 
 package lesson10.task2
 
-import kotlinx.html.*
-import kotlinx.html.stream.appendHTML
+//import kotlinx.html.*
+//import kotlinx.html.stream.appendHTML
 
 /**
  * Пример: преобразование списка списков в HTML таблицу (решение в лоб)
@@ -32,7 +32,7 @@ fun List<List<String>>.convertToHtmlTable(): String {
  * Пример: преобразование списка списков в HTML таблицу
  * (через функции библиотеки kotlinx.html)
  */
-fun List<List<String>>.convertToHtmlTableUsingKotlinxHtml(): String {
+/*fun List<List<String>>.convertToHtmlTableUsingKotlinxHtml(): String {
     val inputList = this
     val sb = StringBuilder()
     sb.appendHTML().html {
@@ -50,7 +50,7 @@ fun List<List<String>>.convertToHtmlTableUsingKotlinxHtml(): String {
     }
     return sb.toString()
 }
-
+*/
 /**
  * Пример: генерация простого HTML (собственный мини-DSL)
  */
@@ -133,3 +133,4 @@ private fun StringBuilder.myHtml(init: HTML.() -> Unit): HTML {
     return html
 }
 
+*/
